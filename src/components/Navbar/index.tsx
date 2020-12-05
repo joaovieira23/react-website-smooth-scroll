@@ -13,13 +13,17 @@ import {
   NavBtn
 } from './styles';
 
-const Navbar: React.FC = () => {
+interface INavbarProps {
+  toggle(): void;
+}
+
+const Navbar: React.FC<INavbarProps> = ({ toggle }) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
           <NavLogo to='/'>dolla</NavLogo>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
