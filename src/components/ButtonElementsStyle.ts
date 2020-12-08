@@ -5,6 +5,7 @@ interface IButtonProps {
   primary?: boolean;
   big?: boolean;
   dark?: boolean;
+  dark2?: boolean;
   fontBig?: boolean;
 }
 

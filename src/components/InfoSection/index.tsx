@@ -48,7 +48,16 @@ const InfoSection: React.FC<IInfoSectionProps> = ({ homeObjOne }) => {
                 <Heading lightText={homeObjOne.lightText} >{homeObjOne.headLine}</Heading>
                 <Subtitle darkText={homeObjOne.darkText} >{homeObjOne.description}</Subtitle>
                 <BtnWrap>
-                  <Button to="home">{homeObjOne.buttonLabel}</Button>
+                  <Button
+                    duration={500}
+                    spy={true}
+                    offset={-80}
+                    primary={true}
+                    dark={true}
+                    dark2={true}
+                    to="home">
+                    {homeObjOne.buttonLabel}
+                  </Button>
                 </BtnWrap>
               </TextWrapper>
             </Column1>
