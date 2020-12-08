@@ -1,15 +1,21 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import GlobalStyle from './styles/global';
 
-import Home from './pages';
+import Home from './pages/index';
+import SigninPage from './pages/signin';
 
 function App() {
   return (
-    <Router>
-      <Home />
+    <>
+      <Router>
+        <Switch>
+          <Route path="/" component={Home} exact />
+          <Route path="/signin" component={SigninPage} />
+        </Switch>
+      </Router>
       <GlobalStyle />
-    </Router>
+    </>
   );
 }
 
