@@ -9,6 +9,7 @@ import {
   homeObjTwo,
   homeObjThree
 } from '../components/InfoSection/data';
+import Services from '../components/Services';
 
 const Home: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,6 +25,7 @@ const Home: React.FC = () => {
       <HeroSection />
       <InfoSection homeObjOne={homeObjOne} />
       <InfoSection homeObjOne={homeObjTwo} />
+      <Services />
       <InfoSection homeObjOne={homeObjThree} />
     </Router>
   )
