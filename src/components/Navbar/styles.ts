@@ -6,7 +6,7 @@ interface INavLinksProps {
   scrollNav?: boolean;
 }
 
-export const Nav = styled.nav`
+export const Nav = styled.nav<INavLinksProps>`
   background: #000;
   height: 80px;
   margin-top: -80px;
@@ -78,7 +78,7 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(LinkS) <INavLinksProps>`
-  color: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
+  color: ${({ scrollNav }) => (scrollNav ? '#fff' : 'transparent')};
   display: flex;
   align-items: center;
   text-decoration: none;
