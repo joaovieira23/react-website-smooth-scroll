@@ -2,6 +2,10 @@ import styled from 'styled-components';
 import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
 
+interface INavLinksProps {
+  scrollNav?: boolean;
+}
+
 export const Nav = styled.nav`
   background: #000;
   height: 80px;
@@ -73,8 +77,8 @@ export const NavItem = styled.li`
   height: 80px;
 `
 
-export const NavLinks = styled(LinkS)`
-  color: #fff;
+export const NavLinks = styled(LinkS) <INavLinksProps>`
+  color: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
   display: flex;
   align-items: center;
   text-decoration: none;

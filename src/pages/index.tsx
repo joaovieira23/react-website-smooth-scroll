@@ -10,6 +10,7 @@ import {
   homeObjThree
 } from '../components/InfoSection/data';
 import Services from '../components/Services';
+import Footer from '../components/Footer';
 
 const Home: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,6 +28,7 @@ const Home: React.FC = () => {
       <InfoSection homeObjOne={homeObjTwo} />
       <Services />
       <InfoSection homeObjOne={homeObjThree} />
+      <Footer />
     </Router>
   )
 }
