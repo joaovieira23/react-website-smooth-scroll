@@ -49,6 +49,7 @@ const InfoSection: React.FC<IInfoSectionProps> = ({ homeObjOne }) => {
                 <Subtitle darkText={homeObjOne.darkText} >{homeObjOne.description}</Subtitle>
                 <BtnWrap>
                   <Button
+                    smooth={true}
                     duration={500}
                     spy={true}
                     offset={-80}
