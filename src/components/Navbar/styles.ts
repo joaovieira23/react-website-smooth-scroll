@@ -78,7 +78,8 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(LinkS) <INavLinksProps>`
-  color: ${({ scrollNav }) => (scrollNav ? '#fff' : 'transparent')};
+  /* color: ${({ scrollNav }) => (scrollNav ? '#fff' : 'transparent')}; */
+  color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
